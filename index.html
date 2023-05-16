@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Totschlagargumente</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1 id="tot">Stellar</h1>
+						<p>&nbsp;</p>
+						<p>
+							<a href="#" id="nochEinen" class="button primary"><strong>Einen hab ich noch...</strong> <em>(Click or press Return)</em></a>
+						</p>
+						<p>&nbsp;</p>
+						<p><a href="https://www.karriereletter.de/best-of-totschlagargumente-draufhauen-statt-zuhoeren/" target="_BLANK">Warum?</a>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+					</header>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+				var totschlagargumente = ["Wenn das ginge, hätte es schon längst jemand gemacht.", "Das wird sowieso irgendwann kommen.", "Das ist grundsätzlich richtig, aber bei uns nicht anwendbar.", "Dazu fehlt uns die Zeit.", "Das ist doch bloß Theorie.", "Da sollten wir uns raushalten.", "Mit diesem Vorschlag wirst Du Ärger bekommen.", "Das ist längst geklärt.", "Das passt nicht in die Zeit.", "Hast Du die Auswirkungen auf Dingsbums berücksichtigt?", "Ich schlage vor, Du gründest erstmal eine Taskforce.", "Unter anderen Rahmenbedingungen wäre das vielleicht eine Option.", "Nur weil alle anderen es machen, müssen wir es noch lange nicht tun.", "Rechne das nochmal durch.", "Das will hier niemand.", "Das kannst Du dem Kunden nicht vermitteln.", "Und wie willst Du die Mitarbeiter abholen?", "Ich kann es nicht mehr hören.", "Lassen uns später darüber reden.", "Das wird nicht passieren.", "Das versteht keiner.", "Ich verstehe es immer noch nicht.", "Das möchte ich jetzt nicht kommunizieren.", "Wie lange bist Du denn jetzt schon bei uns?", "Wem willst Du das weismachen?", "An dem Thema bin ich dran.", "Um das beurteilen zu können, fehlt Dir das Fachwissen.", "Damit haben wir ganz schlechte Erfahrungen.", "Das kriegen wir nicht durch.", "Mein Bauchgefühl sagt Nein.", "Meine Erfahrung spricht dagegen.", "Schick mir das doch mal zu.", "Das ist ein ganz schlechtes Thema.", "Das ist jetzt unpassend.", "Willst Du Dir Feinde machen? Nur zu.", "Auf so eine Idee kann nur ein Anfänger kommen.", "In welchem schlauen Buch hast Du das denn gelesen?", "In der Praxis wird das nicht funktionieren.", "Daran sind schon ganz andere gescheitert.", "Das hat doch keinen Sinn.", "Also, wenn Du Dir richtig Ärger einhandeln willst...", "Das wird sich nie ändern.", "Das ist alternativlos.", "Hast Du sonst keine Probleme?", "Das besprechen wir ein andermal.", "Das würde den Rahmen sprengen.", "Ist das Dein Ernst?", "Wessen Idee war das denn?", "Da könnte ja jeder kommen.", "Dafür ist die Zeit noch nicht reif.", "Wir wollen uns doch nicht die Finger verbrennen.", "So läuft das nicht.", "Dazu sollten wir uns noch mal bilateral abstimmen.", "Da warte ich noch auf eine Rückmeldung.", "Ich glaub nicht, dass das oben gut ankommt.", "Wir haben das doch schon lang und breit diskutiert.", "Das haben wir schon immer so gemacht.", "Das weiß doch jedes Kind, dass das nicht funktioniert.", "Das gehört nicht hierher.", "Wann machen wir damit Gewinn?", "Was bringt das dem Kunden?", "Was bringt uns das?", "Das entspricht nicht der Politik des Hauses.", "Das will der Chef nicht. 100-prozentig nicht.", "Das hat vor 5 Jahren schon mal jemand versucht.", "Was das wieder kostet...", "Dafür haben wir kein Personal.", "Das haben wir doch schon.", "Das hatten wir schon mal.", "Mach da erst mal ein Pilotprojekt.", "Ja, wenn wir Budget dafür hätten...", "Dafür ist jetzt ein ganz schlechter Zeitpunkt.", "Definitiv zu teuer.", "Das spricht nicht unsere Zielgruppe an.", "Das ist doch längst überholt.", "Das ist politisch nicht korrekt.", "Da müssen Sie aber noch mal ran.", "Die Zahlen sprechen dagegen.", "Das ist aber naiv."];
+			
+				function getHotShit() {
+					return "<span style='color:white;'>" + totschlagargumente[Math.floor((Math.random()*totschlagargumente.length))] + "</span>";
+				}
+				$( "#nochEinen" ).click(function() {
+					$( "#tot" ).html(getHotShit());
+				});
+				
+				$( document ).ready(function() {
+					$( "#tot" ).html(getHotShit());
+				});
+			</script>
+
+	</body>
+</html>
